@@ -73,3 +73,10 @@ myProfile.placesLived.forEach(element => {
     document.getElementById('places-lived').appendChild(dt);
     document.getElementById('places-lived').appendChild(dd);
 });
+
+let pagination = 10;
+let i = 1;
+while ( i >= pagination ) {
+  console.log('pass');
+  i++;
+}
