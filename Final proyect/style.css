@@ -1,0 +1,102 @@
+body{
+    background: rgb(36,189,237);
+    background: linear-gradient(0deg, rgba(36,189,237,1) 0%, rgba(50,89,255,1) 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130vh;
+    margin: 0;
+    transition: height 1s ease;
+}
+
+#weather-container {
+    background: rgb(255,127,29);
+    background: linear-gradient(0deg, rgba(51, 194, 255, 0.694) 0%, rgb(252, 232, 176) 100%);
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 1rem;
+    border: 1px solid black;
+    box-shadow: 0 20px 150px rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+h1, label, p {
+    color: #000000;
+    margin: 8px 0;
+}
+
+input {
+    width: auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    border: 1px solid whitesmoke;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+button {
+    background: rgb(23,70,1);
+    background: linear-gradient(0deg, rgba(23,70,1,1) 0%, rgb(109, 207, 96) 100%);
+    color: rgb(0, 0, 0);
+    padding: .7rem;
+    border-radius: .5rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    width: 50%; 
+    border: none;
+    cursor: pointer;
+    opacity: .6;
+}
+button:hover{
+    transition: .4s;
+    opacity: 1;
+}
+
+#temperature p{
+    font-size: 3rem;
+    margin-top: -30px;
+}
+
+#weather {
+    font-size: 20px;
+}
+
+#weather-icon {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 10px;
+    margin-bottom: 0;
+    display: none;
+}
+
+#hourly-forecast {
+    margin-top: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 4rem;
+    display: inline-block;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.hourly-item img{
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 5px;
+}
+
+#hourly-heading {
+    color: #ffffff;
+    margin-top: 10px;
+}
