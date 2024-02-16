@@ -7,10 +7,12 @@
         <title>Josue Hernadez | &Cool Weather</title>
         <link rel="stylesheet" href="./style.css">
         <script src="script.js" type="module"></script>
-    </head>        
+    </head>      
     <body>
-        <div id="weather-container">
+        <div class="title">
             <h1>&Cool Weather</h1>
+        </div>  
+        <div id="weather-container">
             <input type="text" id="city" placeholder="Enter a City">
             <button id="getWeather">Search</button>
 
@@ -21,6 +23,16 @@
             <div id="weather"></div>
 
             <div id="forecast"></div>
+        </div>
+        <div id="weather-container2" style="display: none;">
+            <div id="humi-Container">
+                <img src="images/humidity.png" id="humidity" alt="Humidity" width="19px">
+                <label id="humidity%"></label>
+            </div>
+            <div id="wind-Container">
+                <img src="./images/windspeed.png" id="wind" alt="Wind Speed" width="30px">
+                <label id="wind-speed"></label>
+            </div>
         </div>
     </body>
 </html>

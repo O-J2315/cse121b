@@ -3,6 +3,7 @@ body{
     background: linear-gradient(0deg, rgba(36,189,237,1) 0%, rgba(50,89,255,1) 100%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 130vh;
@@ -15,7 +16,7 @@ body{
     background: linear-gradient(0deg, rgba(51, 194, 255, 0.694) 0%, rgb(252, 232, 176) 100%);
     max-width: 400px;
     padding: 20px;
-    border-radius: 1rem;
+    border-radius: 30px;
     border: 1px solid black;
     box-shadow: 0 20px 150px rgb(0, 0, 0);
     backdrop-filter: blur(10px);
@@ -100,3 +101,27 @@ button:hover{
     color: #ffffff;
     margin-top: 10px;
 }
+
+.title {
+    /* align-self: flex-start; */
+    font-size: 50px;
+    margin-top: -5rem;
+    margin-left: 50%;
+    width: 100%;
+}
+
+#weather-container2 {
+    background: rgb(36,189,237);
+    background: linear-gradient(0deg, rgb(79, 209, 248) 0%, rgb(107, 132, 245) 100%);
+    width: 19%;
+    padding: 1rem;
+    border-radius: 30px;
+    /* border: 1px solid black; */
+    box-shadow: 0 20px 150px rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 10%;
+    align-content: space-between;
+}
+

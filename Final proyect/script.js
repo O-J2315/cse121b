@@ -32,11 +32,15 @@ const displayWeather = (jsonElement) => {
     const weatherDiv = document.getElementById("weather");
     const wIcon = document.getElementById("weather-icon");
     const forecastDiv = document.getElementById("forecast");
+    const humidityElement =  document.getElementById("humidity%");
+    const speedWindElement = document.getElementById("wind-speed");
 
     //Clearing the previous info
     temperatureDiv.innerHTML = "";
     forecastDiv.innerHTML = "";
     weatherDiv.innerHTML = "";
+    humidityElement.innerHTML = "";
+    speedWindElement.innerHTML = "";
 
     //Cheking to handle a conexion error or not found error.
     if (jsonElement.cod === '404'){
@@ -59,6 +63,12 @@ const displayWeather = (jsonElement) => {
 
         displayImage();
     }
+    //Setting the wind speed and humidity elements in the DOM and getting the data from the json element.
+    humidityElement.innerHTML = `${jsonElement.main.humidity}% HUMIDITY`;
+    speedWindElement.innerHTML = `${jsonElement.wind.speed}Km/h WIND SPEED`;
+
+    const weatherDiv2Element = document.getElementById("weather-container2");
+    weatherDiv2Element.style.display = 'Block';
 
 }
 
