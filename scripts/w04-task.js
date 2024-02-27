@@ -38,7 +38,6 @@ myProfile.placesLived.push(
 /* Name */
 
 document.getElementById('name').textContent = myProfile.name;
-
 /* Photo with attributes */
 
 document.querySelector('#photo').setAttribute('src',myProfile.photo);
@@ -74,9 +73,15 @@ myProfile.placesLived.forEach(element => {
     document.getElementById('places-lived').appendChild(dd);
 });
 
-let pagination = 10;
-let i = 1;
-while ( i >= pagination ) {
-  console.log('pass');
-  i++;
-}
+function process(aval, bval) {
+    return aval / 2 + bval;
+ }
+
+let a = 100;
+let b = 45;
+result = process(b, a);
+console.log(result);
+
+
+const msg = document.querySelector('message');
+msg.innerHTML = "Josue";

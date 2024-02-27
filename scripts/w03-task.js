@@ -20,7 +20,7 @@ const subtract = function(number1, number2){
     return number1 - number2;
 }
 
-const subtractNumbers = function(){
+const subtractNumbers = ()=>{
     let subtractNumber1 = parseFloat(document.querySelector('#subtract1').value);
     let subtractNumber2 = parseFloat(document.querySelector('#subtract2').value);
     document.querySelector('#difference').value = subtract(subtractNumber1, subtractNumber2);
